@@ -32,10 +32,27 @@ body {
   text-transform: uppercase;
 }
 
-/* Logo */
+/* Header and logo */
+.header {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 30px;
+}
+
 .logo {
   font-weight: 300;
-  font-size: 30px;
   text-transform: uppercase;
-  border-bottom: 1px solid gray;
+  margin-right: 30px;
+}
+
+/* Message for user notifications */
+.message {
+  background: steelblue;
+  width: 50%;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
