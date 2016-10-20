@@ -31,3 +31,11 @@ body {
   margin-bottom: 0.2rem;
   text-transform: uppercase;
 }
+
+/* Logo */
+.logo {
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+}
