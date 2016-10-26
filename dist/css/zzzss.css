@@ -54,3 +54,22 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 1.3rem;
+  width: 100%;
+  margin: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .app-version {
+  color: #bbbbbb;
+  margin-right: 50px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
