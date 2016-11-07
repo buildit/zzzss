@@ -29,7 +29,6 @@ body {
   color: #aaaaaa;
   font-weight: bold;
   margin-bottom: 0.2rem;
-  text-transform: uppercase;
 }
 
 /* Header and logo */
@@ -37,9 +36,14 @@ body {
   border-bottom: 1px solid gray;
   display: flex;
   align-items: flex-end;
-  font-size: 30px;
+  font-size: 1.8rem;
   cursor: pointer;
   margin-bottom: 30px;
+}
+@media (min-width: 64em) {
+  .header {
+    font-size: 3rem;
+  }
 }
 
 .logo {
