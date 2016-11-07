@@ -18,7 +18,7 @@ body {
 
 /*Text */
 .text {
-  color: #333333;
+  color: pink;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
