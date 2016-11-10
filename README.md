@@ -1,6 +1,6 @@
 # zzzss
 
-Very, very, very sleepy style
+Sleepy style
 
 ## Usage
 
