@@ -25,6 +25,7 @@ body {
 
 }
 .text-label {
+  text-transform: uppercase;
   color: #aaaaaa;
   font-weight: bold;
   margin-bottom: 0.2rem;
