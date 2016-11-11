@@ -1,7 +1,7 @@
 {
   "name": "zzzss",
   "version": "0.0.25",
-  "description": "A sleepy style collection",
+  "description": "A sleepy style collection.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
