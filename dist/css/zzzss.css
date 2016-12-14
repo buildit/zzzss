@@ -31,6 +31,27 @@ body {
   margin-bottom: 0.2rem;
 }
 
+/* Button */
+.button {
+	display: inline-block;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin: 20px 10px 20px 0;
+	color: #fff;
+	background-color: #299baf;
+	border: 0 none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 150ms ease;
+}
+.button.warning {
+  background-color: orange;
+}
+.button:hover, .button:focus {
+  background-color: #111;
+}
+
 /* Header and logo */
 .header {
   border-bottom: 1px solid gray;
