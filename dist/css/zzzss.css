@@ -49,7 +49,7 @@ body {
   background-color: orange;
 }
 .button:hover, .button:focus {
-  background-color: #111;
+  background-color: #0e6c7d;
 }
 
 /* Header and logo */
