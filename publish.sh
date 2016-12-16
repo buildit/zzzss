@@ -1,1 +1,1 @@
-echo "someguy\npw\n" | npm adduser
+echo "${NPM_USER}\n${NPM_PASSWORD}\n${NPM_EMAIL}\n" | npm adduser
