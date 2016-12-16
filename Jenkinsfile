@@ -19,7 +19,7 @@ node {
 
   stage('Publish to npm registry') {
 
-    sh 'billyzac\n${NPM_PASSWORD}\nbillyzacsmith@gmail.com | npm adduser'
+    sh 'echo "billyzac\n${NPM_PASSWORD}\nbillyzacsmith@gmail.com" | npm adduser'
     sh 'npm publish'
   }
 }
