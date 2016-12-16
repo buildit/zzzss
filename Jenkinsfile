@@ -21,6 +21,6 @@ node {
     npmUser="billyzac"
     npmPassword="${env.NPM_PASSWORD}"
     npmEmail="billyzacsmith@gmail.com"
-    sh 'echo "${npmUser}\n${npmPassword}\n${npmEmail}"'
+    sh 'echo $npmUser'
   }
 }
