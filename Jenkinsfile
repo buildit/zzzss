@@ -18,6 +18,7 @@ node {
   }
 
   stage('Publish to npm registry') {
-    sh 'source ./publish.sh'
+    sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc'
+    sh 'npm publish'
   }
 }
