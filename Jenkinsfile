@@ -18,9 +18,9 @@ node {
   }
 
   stage('Publish to npm registry') {
-    npmUser='billyzac'
+    npmUser="billyzac"
     npmPassword="${env.NPM_PASSWORD}"
-    npmEmail='billyzacsmith@gmail.com'
-    sh 'echo "$npmUser\n$npmPassword\n$npmEmail" | npm adduser'
+    npmEmail="billyzacsmith@gmail.com"
+    sh 'echo "$npmUser\n$npmPassword\n$npmEmail"'
   }
 }
