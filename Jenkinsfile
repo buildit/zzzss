@@ -10,7 +10,7 @@ node {
         submoduleCfg: [],
         userRemoteConfigs: [[url: 'https://github.com/BillyZac/zzzss']]
       ]
-      )
+    )
   }
 
   stage('Lint') {
@@ -19,6 +19,5 @@ node {
 
   stage('Publish to npm registry') {
     sh 'echo "${NPM_USER}\n${NPM_PASSWORD}\n${NPM_EMAIL}\n" | npm adduser'
-    sh 'npm publish'
   }
 }
