@@ -4,7 +4,7 @@
   "description": "A sleepy style collection.",
   "main": "index.js",
   "scripts": {
-    "lint": "Pretending to run linting.",
+    "lint": "echo 'Pretending to lint this nasty code.'"
   },
   "keywords": [
     "css"
