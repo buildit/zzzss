@@ -18,11 +18,8 @@ node {
   }
 
   stage('Publish to npm registry') {
-    sh 'npm set init.author.name "Your Name"'
-    sh 'npm set init.author.email "you@example.com"'
-    sh 'npm set init.author.url "http://yourblog.com"'
 
-    sh 'npm adduser'
+    sh 'billyzac\n${NPM_PASSWORD}\nbillyzacsmith@gmail.com | npm adduser'
     sh 'npm publish'
   }
 }
