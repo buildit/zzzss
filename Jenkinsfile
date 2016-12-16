@@ -19,6 +19,6 @@ node {
 
   stage('Publish to npm registry') {
     npmPassword=env.NPM_PASSWORD
-    echo ${npmPassword}
+    sh 'echo ${npmPassword}'
   }
 }
