@@ -8,7 +8,7 @@ node {
         branches: [[name: '*/master']],
         doGenerateSubmoduleConfigurations: false, extensions: [],
         submoduleCfg: [],
-        userRemoteConfigs: [[url: 'https://github.com/BillyZac/zzzss']]
+        userRemoteConfigs: [[url: 'https://github.com/buildit/zzzss']]
       ]
     )
   }
