@@ -2,15 +2,7 @@
 
 node {
   stage('Checkout from SCM') {
-    checkout(
-      [
-        $class: 'GitSCM',
-        branches: [[name: '*/master']],
-        doGenerateSubmoduleConfigurations: false, extensions: [],
-        submoduleCfg: [],
-        userRemoteConfigs: [[url: 'https://github.com/buildit/zzzss']]
-      ]
-    )
+    checkout scm
   }
 
   stage('Lint') {
