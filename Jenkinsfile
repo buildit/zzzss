@@ -1,11 +1,18 @@
 #!groovy
 
+def getShell() {
+    new shell()
+}
+
+def getCommitTag(commit = "HEAD") {
+    return getShell().pipe("git tag -l --points-at ${commit}")
+}
+
 node {
   stage('Setup') {
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
 
-    git = load "lib/git.groovy"
-    tag = sh(script: 'git tag -l --points-at HEAD', returnStdout: true).trim()
+    tag = getCommitTag()
     sh 'echo ${tag}'
   }
 
