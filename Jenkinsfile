@@ -5,13 +5,13 @@ def pipe(command){
 }
 
 def getCommitTag(commit = "HEAD") {
-    return pipe("git tag -l --points-at ${commit}")
+  return pipe("git tag -l --points-at ${commit}")
 }
 
 node {
   stage('Setup') {
+    sh "git tag -l --points-at HEAD"
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
-
     tag = getCommitTag()
     sh 'echo ${tag}'
   }
