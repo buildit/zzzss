@@ -8,7 +8,7 @@
     "validate": "npm run lint",
     "preversion": "npm run validate",
     "version": "git add -A",
-    "postversion": "git push --tags"
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "css"
