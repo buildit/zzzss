@@ -6,7 +6,7 @@ node {
 
     git = load "lib/git.groovy"
     commitMessage = git.getCommitMessage()
-    sh 'echo ${commitMessage}'
+    sh "echo ${commitMessage}"
   }
 
   stage('Checkout from SCM') {
