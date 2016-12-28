@@ -5,8 +5,7 @@ node {
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
 
     git = load "lib/git.groovy"
-    commitMessage = git.getCommitMessage()
-    sh "echo ${commitMessage}"
+    tagged = true
   }
 
   stage('Checkout from SCM') {
@@ -18,7 +17,9 @@ node {
   }
 
   stage('Publish to npm registry') {
-    sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc'
-    sh 'npm publish'
+    if (tagged) {
+      sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc'
+      sh 'npm publish'
+    }
   }
 }
