@@ -1,6 +1,6 @@
 # zzzss
 
-Sleepy stylez
+Sleepy style
 
 ## Usage
 
