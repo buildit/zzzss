@@ -6,7 +6,7 @@ node {
 
     git = load "lib/git.groovy"
     tag = sh(script: 'git tag -l --points-at HEAD', returnStdout: true).trim()
-    sh 'echo "${tag}"'
+    sh 'echo ${tag}'
   }
 
   stage('Checkout from SCM') {
