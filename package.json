@@ -4,7 +4,11 @@
   "description": "A sleepy style collection.",
   "main": "index.js",
   "scripts": {
-    "lint": "echo 'Pretending to lint this nasty code.'"
+    "lint": "echo 'Pretending to lint this nasty code.'",
+    "validate": "npm run lint",
+    "preversion": "npm run validate",
+    "version": "git add -A",
+    "postversion": "git push --tags"
   },
   "keywords": [
     "css"

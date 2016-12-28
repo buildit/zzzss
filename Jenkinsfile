@@ -5,8 +5,8 @@ node {
     checkout scm
   }
 
-  stage('Lint') {
-    sh 'npm run lint'
+  stage('Validate') {
+    sh 'npm run validate'
   }
 
   stage('Publish to npm registry') {
