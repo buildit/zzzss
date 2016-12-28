@@ -10,7 +10,7 @@ def getCommitTag() {
 
 node {
   stage('Setup') {
-    sh 'echo *******'
+    sh 'echo "====TAGS===="'
     sh "git tag -l --points-at HEAD > tag";
     def tag=readFile('tag').trim()
     echo "tag=$tag";
@@ -20,10 +20,10 @@ node {
   }
 
   stage('Checkout from SCM') {
-    sh 'echo *******'
+    sh 'echo "====TAGS===="'
     sh "git tag -l --points-at HEAD"
     checkout scm
-    sh 'echo *******'
+    sh 'echo "====TAGS===="'
     sh "git tag -l --points-at HEAD"
   }
 
