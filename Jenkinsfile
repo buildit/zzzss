@@ -7,6 +7,7 @@ node {
 
   stage('Checkout from SCM') {
     checkout scm
+    sh "git clean -ffdx"
   }
 
   stage('Validate') {
