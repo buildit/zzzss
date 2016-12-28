@@ -2,12 +2,12 @@
 
 node {
   stage('Setup') {
+    sh "git clean -ffdx"
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
   }
 
   stage('Checkout from SCM') {
     checkout scm
-    sh "git clean -ffdx"
   }
 
   stage('Validate') {
