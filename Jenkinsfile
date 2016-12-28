@@ -4,8 +4,8 @@ def pipe(command){
     sh(script: command, returnStdout: true)
 }
 
-def getCommitTag(commit = "HEAD") {
-  return pipe("git tag -l --points-at ${commit}")
+def getCommitTag() {
+  return pipe("git tag -l --points-at HEAD")
 }
 
 node {
