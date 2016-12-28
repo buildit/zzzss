@@ -13,8 +13,8 @@ node {
     sh 'echo "====TAGS===="'
     sh "git tag -l --points-at HEAD > tag";
     def tag=readFile('tag').trim()
-    echo "tag=$tag";
-    sh 'echo ${tag}'
+    echo "tag is $tag";
+    echo "$tag"
 
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
   }
@@ -32,6 +32,7 @@ node {
   }
 
   stage('Publish to npm registry') {
+    echo "$tag"
     if (tag) {
       sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc'
       sh 'npm publish'
