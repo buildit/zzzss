@@ -10,14 +10,20 @@ def getCommitTag(commit = "HEAD") {
 
 node {
   stage('Setup') {
+    sh 'echo *******'
     sh "git tag -l --points-at HEAD"
+
     sh "curl -L https://dl.bintray.com/buildit/maven/jenkins-pipeline-libraries-${env.PIPELINE_LIBS_VERSION}.zip -o lib.zip && echo 'A' | unzip lib.zip"
     tag = getCommitTag()
     sh 'echo ${tag}'
   }
 
   stage('Checkout from SCM') {
+    sh 'echo *******'
+    sh "git tag -l --points-at HEAD"
     checkout scm
+    sh 'echo *******'
+    sh "git tag -l --points-at HEAD"
   }
 
   stage('Validate') {
