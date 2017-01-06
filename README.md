@@ -1,10 +1,14 @@
+![ZZZSS logo](./zzzss-logo.gif)
+
 # zzzss
 
 Sleepy styles.
 
 ## Usage
 
-The consumable CSS is found in "dist/css/zzzss.css". You can pull this into your project in any number of ways. To see how I'm doing it in a React project, check out my [Style Guide](https://github.com/BillyZac/style-guide/). In that case, I'm using relying on Webpack to inject the CSS into the bundled Javascript.
+The consumable CSS is found in "dist/css/zzzss.css".
+
+You can pull this into your project in any number of ways. To see how I'm doing it in a React project, check out my [Style Guide](https://github.com/BillyZac/style-guide/). In that case, I'm using relying on Webpack to inject the CSS into the bundled Javascript.
 
 ## For ZZZSS developers
 If you want to work on the ZZZSS library, here are some tips and guidelines.
@@ -27,4 +31,4 @@ npm version patch -m "Fix bug"
 
 We're using pre and post version hooks (see package.json) to validate and push the code to the remote repo.
 
-The next time someone logs in to our Jenkins server and clicks "Build Now", Jenkins will publish the update to npm. Then any project that depends on Whippersnapper will be able to make use of the updated code.
+The next time someone logs in to our Jenkins server and clicks "Build Now", Jenkins will publish the update to npm. Then any project that depends on ZZZSS will be able to make use of the updated code.
