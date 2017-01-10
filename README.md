@@ -29,4 +29,4 @@ npm version patch -m "Fix bug"
 
 We're using pre and post version hooks (see package.json) to validate and push the code to the remote repo.
 
-The next time someone logs in to our Jenkins server and clicks "Build Now", Jenkins will publish the update to npm. Then any project that depends on ZZZSS will be able to make use of the updated code.
+Jenkins is configured to run the job whenever a new commit is pushed to ZZZSS's remote repository. At that point, the new version will be published to npm, and any project that depends on ZZZSS will be able to make use of the updated code.
