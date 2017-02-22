@@ -4,6 +4,7 @@ $brand-colour-white: #ffffff;
 $brand-colour-blue: steelblue;
 $brand-colour-red: #e84925;
 $brand-colour-green: #bedb39;
+$danger-colour: #d9534f;
 
 $brand-primary-colour: $brand-colour-black;
 $brand-secondary-colour: $brand-colour-blue;
@@ -23,7 +24,7 @@ $button-focus-colour: #0e6c7d;
 $button-warning-colour: orange;
 $button-info-colour: #5bc0de;
 $button-success-colour: #5cb85c;
-$button-danger-colour: $danger-colour
+$button-danger-colour: $danger-colour;
 
 $nav-list-item-primary-colour: #dcdcdc;
 $nav-list-item-secondary-colour: $brand-primary-colour;
@@ -31,6 +32,5 @@ $nav-list-item-hover-colour: #ffffff;
 $nav-list-item-active-colour: $brand-colour-yellow;
 $nav-toggle-icon-colour: #ffffff;
 
-$danger-colour: #d9534f;
 $gray: #777777;
 $light-gray: #eeeeee;
