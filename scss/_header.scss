@@ -1,6 +1,6 @@
 /* Header and logo */
 .header {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $brand-header-border-colour;
   display: flex;
   align-items: flex-end;
   font-size: 1.8rem;

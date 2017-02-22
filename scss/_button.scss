@@ -5,17 +5,17 @@
 	text-transform: uppercase;
 	padding: 10px 15px;
 	margin: 20px 10px 20px 0;
-	color: #fff;
-	background-color: #299baf;
+	color: $brand-colour-white;
+	background-color: $button-colour;
 	border: 0 none;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: all 150ms ease;
   &.warning {
-    background-color: orange;
+    background-color: $button-warning-colour
   }
   &:hover,
   &:focus {
-    background-color: #0e6c7d;
+    background-color: $button-focus-color
   }
 }
