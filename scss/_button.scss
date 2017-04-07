@@ -18,4 +18,8 @@
   &:focus {
     background-color: $button-focus-colour
   }
+	&:disabled {
+		opacity: 0.65;
+  	cursor: not-allowed;
+	}
 }
